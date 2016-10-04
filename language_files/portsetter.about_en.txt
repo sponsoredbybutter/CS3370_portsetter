@@ -1,0 +1,3 @@
+Portsetter was lovingly developed by Rick Johnson, who is passionate about ports.
+
+LEGAL DISCLAIMER: Portsetter does not actually set ports.

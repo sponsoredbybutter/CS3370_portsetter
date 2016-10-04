@@ -1,0 +1,17 @@
+
+USO:
+    setport [indicador] [OPCIONAL numero de puerto]
+    
+Indicadores validos:
+  -p, --port    Usa esto seguido por un puerto valido para escoger este puerto.
+                 > setport -p 4450
+  -e            Selecciona un variable environmental para su uso como numero de puerto.
+                Tiene que ser precedido por -p o --port.
+                Si dado sin un nombre de variable, var env. PORT se se utilizará.
+                 > setport -p -e ; setport -p -e MEGA_PORT
+  -!, --about   Muestra informacion sobre el desarrollador del programa.
+  -v, --version     Muestra numero de la versión de este programa.
+  -h, -?, --help    Muestra las opciones para usar portsetter.
+  
+Numero del puerto:
+ - Numero del puerto tiene que ser un numero entero entre 1 y 65535.

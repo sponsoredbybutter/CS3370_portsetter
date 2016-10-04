@@ -1,0 +1,7 @@
+Listening on port 
+Error: Given flag not recognized.
+Error: Too many arguments used with given flag(s).
+Error: No port was given.
+Error: Given environment variable was not found.
+Error: Invalid port given.
+Error: Value of environmental variable was not a valid port.

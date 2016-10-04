@@ -1,0 +1,7 @@
+Escuchando en el puerto 
+Error: Indicador dado no se reconoce.
+Error: Demasiados argumentos se usa con indicador dado.
+Error: No puerto se dio.
+Error: Variable environmental dado no se encuentra.
+Error: Puerto invalido se dio.
+Error: Valor del variable environmental no fue un puerto valido.

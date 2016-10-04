@@ -1,0 +1,3 @@
+Portsetter fue escrito con mucho amor por Rick Johnson, quien ama los puertos.
+
+NOTA LEGAL: Portsetter no establece los puertos en realidad.

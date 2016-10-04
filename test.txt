@@ -1,0 +1,19 @@
+Missing cn translation files. Using English.
+Error: Invalid port given.
+
+USAGE:
+    setport [flag] [OPTIONAL port number]
+    
+Valid flags:
+  -p, --port    Use this followed by a valid port number to choose that port.
+                 > setport -p 4450
+  -e            Selects an environment variable to use as port number.
+                Must be preceded by -p or --port.
+                If given without a variable name, env. var PORT will be used.
+                 > setport -p -e ; setport -p -e MEGA_PORT
+  -!, --about   Display information about the program's developer.
+  -v, --version     Display version number of this program.
+  -h, -?, --help    Display the options for using portsetter.
+  
+Port number:
+ - Port number must be an integer between 1 and 65535.
