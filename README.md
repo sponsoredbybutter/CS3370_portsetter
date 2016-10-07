@@ -4,15 +4,15 @@
 
 __IMPORTANT:__
 
-To compile the .cpp files, do `g++-5 -std=c++11 portsetter.cpp -o portsetter.cpp.o__`
+To compile porttester.cpp, do `g++-5 -std=c++11 portsetter.cpp -o portsetter.cpp.o`
 
 If you don't use __g++ -5__, the RegEx will not compile.
 
-1. Copy this repository to Cloud9 or your favorite Linux machine. 
-2. Compile portsetter.cpp (and porttester.cpp if you want to run the automated tests).
-3. To add setport as a command in the terminal, run install.sh.
+1. Copy this repository to Cloud9 or your favorite Linux machine.
+2. Compile portsetter.cpp and porttester.cpp.
+3. To add setport as a command in the terminal, run install.sh (./install.sh).
     * If it says "bash: ./install.sh: Permission denied", then do chmod +x install.sh and run install.sh again.
-4. You are now free to use setport in the terminal as much as you please.
+4. You are now free to use setport in the terminal as much as you please, from any directory!
 
 
 ## Uninstallation
@@ -41,11 +41,15 @@ If you don't use __g++ -5__, the RegEx will not compile.
     * -v, --version
     * -e (to be used with -p or --port)
     * For more information, use setport -h
-* External files for portsetter usage and information about the developer. Easily forward them to your friends and family.
+* External files for portsetter usage, and information about the developer. Easily forward them to your friends and family.
 * An abundance of new tests in porttester.cpp.
 
 ## What's new in version 1.03?
 * Support for languages besides English, including an easy framework for adding new languages
 * Free Spanish translation packs.
+
+## What's new in version 1.04?
+* Hundreds of new comments
+* Mild bug fixes, including properly checking the environmental variables and allowing setport to run from any directory.
 
 Portsetter is now on GitHub! Come check it out!
