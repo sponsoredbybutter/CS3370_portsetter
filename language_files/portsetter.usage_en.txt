@@ -5,7 +5,7 @@ USAGE:
 Valid flags:
   -p, --port    Use this followed by a valid port number to choose that port.
                  > setport -p 4450
-  -e            Selects an environment variable to use as port number.
+  -e, --environment            Selects an environment variable to use as port number.
                 Must be preceded by -p or --port.
                 If given without a variable name, env. var PORT will be used.
                  > setport -p -e ; setport -p -e MEGA_PORT
