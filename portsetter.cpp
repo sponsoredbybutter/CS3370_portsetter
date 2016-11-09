@@ -197,7 +197,7 @@ int main(int argc, char* args[]){
         
         // If -e is used; Convert arg to string first.
         flag = args[2];
-        if(flag == "-e"){
+        if(flag == "-e" || flag == "--environment"){
             // There should not be more than 4 arguments
             if(!assert_num_arguments(argc, 4)) return TOO_MANY_ARGUMENTS;
             

@@ -204,8 +204,10 @@ int main(int argc, char* args[]){
     setenv("WUBALUBADUBDUB", "4920", 1);
     if(!test_helper("setport --port -e", SUCCESS, "8080", false)) return_code = 1;
     if(!test_helper("setport -p -e", SUCCESS, "8080", false)) return_code = 1;
+    if(!test_helper("setport -p --environment", SUCCESS, "8080", false)) return_code = 1;
     if(!test_helper("setport --port -e WUBALUBADUBDUB", SUCCESS, "4920", false)) return_code = 1;
     if(!test_helper("setport -p -e WUBALUBADUBDUB", SUCCESS, "4920", false)) return_code = 1;
+    if(!test_helper("setport -p --environment WUBALUBADUBDUB", SUCCESS, "4920", false)) return_code = 1;
     // Unset some environmental variables
     unsetenv("WUBALUBADUBDUB");
     setenv("PORT", current_port, 1);
@@ -246,7 +248,9 @@ int main(int argc, char* args[]){
     unsetenv("PORT");
     if(!test_helper("setport -p -e", ENV_VAR_NOT_FOUND)) return_code = 1;
     if(!test_helper("setport --port -e", ENV_VAR_NOT_FOUND)) return_code = 1;
+    if(!test_helper("setport --port --environment", ENV_VAR_NOT_FOUND)) return_code = 1;
     setenv("PORT", current_port, 1);
+    if(!test_helper("setport --port -e --environment", ENV_VAR_NOT_FOUND)) return_code = 1;
     if(!test_helper("setport -p -e WUBALUBADUBDUB", ENV_VAR_NOT_FOUND)) return_code = 1;
     if(!test_helper("setport --port -e WUBALUBADUBDUB", ENV_VAR_NOT_FOUND)) return_code = 1;
     setenv("WUBALUBADUBDUB", "125302", 1);
@@ -258,6 +262,7 @@ int main(int argc, char* args[]){
     if(!test_helper("setport --port -e WUBALUBADUBDUB", ENV_VAR_NOT_VALID)) return_code = 1;
     if(!test_helper("setport -p -E WUBALUBADUBDUB", TOO_MANY_ARGUMENTS)) return_code = 1;
     if(!test_helper("setport --port -E", INVALID_PORT)) return_code = 1;
+    if(!test_helper("setport --port --ENVIRONMENT", INVALID_PORT)) return_code = 1;
     unsetenv("WUBALUBADUBDUB");
     
     // VERSION 1.03: SPANISH TESTS

@@ -52,4 +52,9 @@ If you don't use __g++ -5__, the RegEx will not compile.
 * Hundreds of new comments
 * Mild bug fixes, including properly checking the environmental variables and allowing setport to run from any directory.
 
+## What's new in version 1.05?
+* Added --environment flag as an alias for -e
+* Made the usage message slightly prettier
+* Added a new developer whose unvetted changes may or may not violate any third-party software licenses
+
 Portsetter is now on GitHub! Come check it out!
